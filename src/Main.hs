@@ -41,6 +41,9 @@ main :: IO ()
 --    | otherwise = start : forLoop (start + step) end step 
 --main = print $ forLoop 1 10 2     
 
---calling from library/module
-main = do         
-  factorial
+--calling from library/module Factorial.hs (recursive method)
+main = do
+  putStrLn "Enter a number to calculate its factorial:"
+  input <- getLine
+  let n = read input :: Integer
+  putStrLn $ "The factorial of " ++ show n ++ " is " ++ show (factorial(n))

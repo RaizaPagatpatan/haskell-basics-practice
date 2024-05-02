@@ -1,9 +1,18 @@
 module Factorial(factorial) where
 
-factorial :: IO ()
---PLACEHOLDER
-forLoop :: Int -> Int -> Int -> [Int]
-forLoop start end step
-    | start > end = [] 
-    | otherwise = start : forLoop (start + step) end step 
-factorial = print $ forLoop 1 10 2              
+-- Factorial function using recursion
+--factorial :: Integer -> Integer
+--factorial 0 = 1
+--factorial n = n * factorial (n - 1)  
+
+-- Factorial function using iteration without library (product)
+factorial :: Integer -> Integer
+factorial n
+  | n < 0 = error "Factorial is not defined for negative numbers"  
+  | n == 0 = 1  
+  | otherwise = iter 1 1  
+  where
+    iter :: Integer -> Integer -> Integer
+    iter current result
+      | current > n = result
+      | otherwise = iter (current + 1) (result * current) 

@@ -1,4 +1,4 @@
-INSTALLATION GUIDE
+INSTALLATION GUIDE by Yours Truly =w= Zewawa 
     - I used IntelliJ Idea as an IDE because its convenient and easy to use.
     - Alternatively you can use Hugs 98' but it's not maintained anymore.
 
@@ -49,6 +49,6 @@ Step 5: Compiling using Terminal
     - Open Terminal:
         ghc Main.hs
         ./Main.exe  
-    - YAY!!!
+    - YAY!!! na compile na  :3
 
 That's all! Thank you~~~
